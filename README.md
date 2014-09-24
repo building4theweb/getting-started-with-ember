@@ -39,7 +39,9 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+* `heroku create <OPTIONAL_APP_NAME> --buildpack https://github.com/tonycoco/heroku-buildpack-ember-cli.git`
+* `git push heroku master`
+* `heroku open`
 
 ## Further Reading / Useful Links
 
