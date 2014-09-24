@@ -1,4 +1,4 @@
-# Getting-started-with-ember
+# Getting Started With Ember
 
 This README outlines the details of collaborating on this Ember application.
 

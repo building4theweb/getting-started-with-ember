@@ -1,0 +1,13 @@
+<a href="#" class="btn btn-sm btn-default"{{action "toggle"}}>
+  {{#if previewVisible}}
+    Edit document
+  {{else}}
+     Show Preview
+  {{/if}}
+</a>
+<div class="pull-right">
+  {{#unless previewVisible}}
+    <a href="#" class="btn btn-sm btn-success" {{action "save"}}>Save</a>
+    <a href="#" class="btn btn-sm btn-default" {{action "cancel"}}>Cancel</a>
+  {{/unless}}
+</div>

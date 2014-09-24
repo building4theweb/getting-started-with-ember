@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3">
+      {{#link-to 'documents.new' class="btn btn-default"}}Create Document{{/link-to}}
+      <hr>
+      <div class="list-group">
+        {{#each document in controller}}
+          {{#link-to 'document' document class="list-group-item"}}
+            <h4 class="list-group-item-heading">{{document.name}}</h4>
+            <p class="list-group-item-text">Created {{date-relative document.created}}</p>
+          {{/link-to}}
+        {{/each}}
+      </div>
+    </div>
+    <div class="col-sm-9">{{outlet}}</div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-sm-12">
+    {{editor-controls previewVisible=previewVisible toggle="togglePreview" save="saveDocument" cancel="cancelDocument"}}
+  </div>
+</div>
+<hr>
+{{#if previewVisible}}
+  {{showdown-addon text}}
+{{else}}
+  <p>{{input type="text" value=name placeholder="Untitled Document" class="form-control" autofocus="autofocus"}}</p>
+  {{textarea value=text rows="20" class="form-control"}}
+{{/if}}

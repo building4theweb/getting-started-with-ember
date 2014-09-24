@@ -1,3 +1,29 @@
 html, body {
   margin: 20px;
 }
+
+a.active,
+a.active:hover {
+    background-color: #2e75c1 !important;
+    color: white;
+}
+
+.container-text-centered {
+    text-align: center;
+}
+
+.huge-placeholder-text {
+    font-weight: 100;
+    font-size: 90px;
+    color: #bfbfbf;
+    margin: 50px 0;
+}
+
+.header-page-title {
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 15px;
+}
+
+a.link-red {
+    color: red;
+}
