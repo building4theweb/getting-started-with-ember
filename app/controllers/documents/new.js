@@ -10,6 +10,7 @@ export default Ember.Controller.extend({
 
     saveDocument: function() {
       var self = this;
+
       var doc = this.store.createRecord('document', {
         name: this.get('name'),
         text: this.get('text'),
@@ -23,8 +24,7 @@ export default Ember.Controller.extend({
     },
 
     cancelDocument: function() {
-      this.set('name', '');
-      this.set('text', '');
+      this.setProperties({name: '', text: ''});
       this.transitionToRoute('documents.index');
     }
   }

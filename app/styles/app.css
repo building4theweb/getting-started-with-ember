@@ -27,3 +27,8 @@ a.active:hover {
 a.link-red {
     color: red;
 }
+
+.btn-create-document.active {
+    color: white;
+    background-color: #3f3f3f !important;
+}
