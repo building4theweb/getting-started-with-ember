@@ -17,6 +17,7 @@ export default Ember.Controller.extend({
       });
 
       doc.save().then(function() {
+        self.setProperties({name: '', text: ''});
         self.transitionToRoute('document', doc);
       });
     },
