@@ -9,10 +9,15 @@ export default Ember.Controller.extend({
     },
 
     saveDocument: function() {
-      var self = this;
+      var self = this,
+          name = this.get('name');
+
+      if (name === '') {
+        name = 'Untitled Document';
+      }
 
       var doc = this.store.createRecord('document', {
-        name: this.get('name'),
+        name: name,
         text: this.get('text'),
         created: new Date()
       });
